@@ -6,15 +6,49 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Advanced Search</title>
     </head>
-    <body class="advanced-search container">
-        <div>
+    <body>
+        <div class="advanced-search">
+          <nav class="container">
+            <a class="image" href="index.html">
+              <img src="google-logo.svg" alt="Google logo">
+            </a>
+            <a href="index.html">Google Search</a>
+          </nav>
+          <h1>Advanced Search</h1>
+          <hr>
           <form action="https://google.com/search">
-            <input type="text" name="as_q">
-            <input type="text" name="as_epq">
-            <input type="text" name="as_oq">
-            <input type="text" name="as_eq">
-            <input type="submit" value="Google Search">
+            <div class="section-titles">
+              <p class="title-1">Find pages with...</p>
+              <p class="title-2">To do this in the search box</p>
+            </div>
+            <div class="advanced-search-inputs">
+              <div class="input-row">
+                <p class="input-row-text-1">all these words:</p>
+                <input type="text" name="as_q" autocomplete="off">
+                <p class="input-row-text-2">Type the important words: <samp>&nbsp;tricolor rat terrier</samp></p>
+              </div>
+              <div class="input-row">
+                <p class="input-row-text-1">this exact word or phrase:</p>
+                <input type="text" name="as_epq" autocomplete="off">
+                <p class="input-row-text-2">Put exact words in quotes: <samp>&nbsp;"rat terrier"</samp></p>
+              </div>
+              <div class="input-row">
+                <p class="input-row-text-1">any of these words:</p>
+                <input type="text" name="as_oq" autocomplete="off">
+                <p class="input-row-text-2">Type <samp>OR</samp> between all the words you want: <samp>&nbsp;miniature OR standard</samp></p>
+              </div>
+              <div class="input-row">
+                <p class="input-row-text-1">none of these words:</p>
+                <input type="text" name="as_eq" autocomplete="off">
+                <p class="input-row-text-2">Put a minus sign just before words you don't want: <br><samp>&nbsp;-rodent, -"Jack Russell"</samp></p>
+              </div>
+              
+              <input type="submit" value="Advanced Search">
+            </div>
           </form>
         </div>
+        <footer>
+          Built by <a href="https://github.com/tammyh0/google-search" target="_blank">Tammy Ho 👩🏻‍💻</a>
+        </footer>
     </body>
 </html>
